@@ -1,8 +1,11 @@
 import React from 'react';
+import { shortString } from 'starknet'
+import { isValidType } from 'starknet/dist/utils/typedData'
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  console.log(shortString.encodeShortString('hello'))
   return (
     <div className="App">
       <header className="App-header">
